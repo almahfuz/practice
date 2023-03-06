@@ -1,20 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Document</title>
+
+    <style>
+        .grooveColor {
+            border-style: groove;
+            padding: 2rem;
+            background-color: bisque;
+        }
+    </style>
 </head>
+
 <body>
-    
 
-    <button onclick="LoadData()" type="button" class="btn btn-info my-5 mx-5">Please click here, Load the data from API</button>
 
-    <button onclick="LoadData2()" type="button" class="btn btn-info my-5 mx-5">Please click here, Load the User data from API</button>
-    
-    <button onclick="LoadDataShow()" type="button" class="btn btn-info my-5 mx-5">Please click here, Display User data from API</button>
+    <button onclick="LoadData()" type="button" class="btn btn-info my-5 mx-5">Please click here, Load the data from
+        API</button>
+
+    <button onclick="LoadData2()" type="button" class="btn btn-info my-5 mx-5">Please click here, Load the User data
+        from API</button>
+
+    <button onclick="LoadDataShow()" type="button" class="btn btn-info my-5 mx-5">Please click here, Display User data
+        from API(fetch)</button>
 
     <div class="container">
         <ul class="border w-25" id="user-lists">
@@ -22,12 +36,23 @@
             <!-- LoadDataShow using and show here data from api  -->
         </ul>
     </div>
+    <button onclick="LoadDataPost()" type="button" class="btn btn-success my-5 mx-5">Please click here, Display User
+        data from API(Post)</button>
 
+    <div class="container">
+        <ul class="border w-50" id="User-Post-lists">
+
+            <!-- LoadDataShow using and show here data from api(post)  -->
+        </ul>
+    </div>
 
 
 
     <!-- script js  -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
     <script src="./fetchapi.js"></script>
 </body>
+
 </html>
